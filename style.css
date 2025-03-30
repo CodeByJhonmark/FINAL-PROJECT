@@ -9,6 +9,15 @@ header{
     background-color: gray;
     align-content: center;
     height: 60px;
+    padding-right: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: inline-block;
 }
 header ul li{
     list-style: none;
@@ -19,6 +28,43 @@ header ul li{
 }
 header ul li a{
     color: white;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: #e0e0e0;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-out 0.3s;  
+}
+.dropdown a{
+    display: block;
+    color: black;
+    padding: 10px 15px;
+    transition: ease-out 0.3s;  
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(178, 178, 178);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 11%, 0.799);
+}
+.dropdown:hover button{
+    background-color: #000000;
+    color: rgb(241, 236, 236);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown a:hover{
+    color: rgb(241, 236, 236);
+    background-color: black;
+    border-radius: 10px;
 }
 .circle{
     position: absolute;
