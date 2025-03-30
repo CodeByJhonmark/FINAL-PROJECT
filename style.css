@@ -28,6 +28,11 @@ header ul li{
 }
 header ul li a{
     color: white;
+    font-weight: 500;
+}
+header a:hover,
+header a.active{
+    color: #000000;
 }
 .dropdown{
     display: inline-block;
