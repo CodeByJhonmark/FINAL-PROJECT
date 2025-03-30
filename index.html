@@ -2,29 +2,54 @@
 <head>
         <title>Web Design Finals</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="loading.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-               <li><a href="index.html" class="active">Home</a></li>
-               <li><a href="developers.html">Developers</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-            <div class="dropdown">
-                        <button>Lessons</button>
-                <div class="content">
-                        <a href="htmlLesson.html">HTML</a>
-                        <a href="cssLesson.html">CSS</a>
-                        <a href="javascriptLesson.html">JAVASCRIPT</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-        <div class="circle">
+    <!-- Loading -->  
+    <div class="loader-container">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle r="32" cy="40" cx="40"></circle>
+            </svg>
         </div>
+    
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+    
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect height="64" width="64" y="8" x="8"></rect>
+            </svg>
+        </div>
+    </div>
+        
+
+    <div class="page">
+        <header>
+                <nav>
+                    <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="developers.html">Developers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <div class="dropdown">
+                                <button>Lessons</button>
+                        <div class="content">
+                                <a href="htmlLesson.html">HTML</a>
+                                <a href="cssLesson.html">CSS</a>
+                                <a href="javascriptLesson.html">JAVASCRIPT</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+                <div class="circle">
+                </div>
+    </div>
 </body>
 </html>
