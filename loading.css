@@ -171,11 +171,11 @@
         opacity: 1;
         display: block;
     }
-    59%{
+    49%{
         opacity: 1;
         display: block;
     }
-    60%{
+    50%{
         opacity: 0;
         display: none;
     }
@@ -194,11 +194,11 @@
         opacity: 0;
         display: none;
     }
-    61%{
+    51%{
         opacity: 0;
         display: none;
     }
-    62%{
+    52%{
         opacity: 1;
         display: block;
     }

@@ -86,7 +86,14 @@ header a.active{
     animation-duration: 1s;
 }
 @keyframes animationcircle{
-    from{transform: translateY(500px);}
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /*developers animation*/
