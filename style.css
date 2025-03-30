@@ -34,6 +34,8 @@ header a:hover,
 header a.active{
     color: #000000;
 }
+
+/*DROPDOWN*/
 .dropdown{
     display: inline-block;
 }
@@ -73,11 +75,132 @@ header a.active{
 }
 .circle{
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     left: -200px;
     top: -80px;
     border-radius: 100%;
     background: #e0e0e0;
     z-index: -100;
+    animation-name: animationcircle;
+    animation-duration: 1s;
+}
+@keyframes animationcircle{
+    from{transform: translateY(500px);}
+}
+
+/*developers animation*/
+.malupiton img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50px;
+    top: 90px;
+    background: transparent;
+    z-index: -50;
+    animation-name: razon;
+    animation-duration: 2s;
+}
+@keyframes razon{
+    from{
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.malupiton1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+}
+.malupiton1 img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    z-index: -50;
+    animation-name: payno;
+    animation-duration: 2s;
+}
+@keyframes payno{
+    from{
+        transform: translateY(-180px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.malupiton2 img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 60px;
+    top: 100px;
+    background: transparent;
+    z-index: -50;
+    animation-name: norcio;
+    animation-duration: 3s;
+}
+@keyframes norcio{
+    from{
+        transform: translateX(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*names*/
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+    width: 100%;
+}
+
+.names ul {
+    position: absolute;
+    display: flex;
+    gap: 75px;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.names ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none; 
+}
+
+.names ul li h1 {
+    color: rgb(240, 233, 233);
+    display: inline;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.names ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    height: 100%;
+    background: rgb(22, 21, 21);
+    animation: showleft 1s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes showleft{
+    100%{
+        width: 0;
+    }
 }
