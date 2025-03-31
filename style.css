@@ -177,13 +177,13 @@ header a.active{
     justify-content: center;
     align-items: center; 
     text-align: center;
-    width: 500px;
+    width: 700px;
+    margin-top: 90px;
 }
 .typewriter h1{
     color: white;
     font-family: monospace;
     font-size: 60px;
-    font-weight: 900;
     /*margin-inline: auto;*/
     overflow: hidden;
     white-space: nowrap;
