@@ -18,10 +18,10 @@ header{
     height: 60px;
     padding-right: 70px;
     z-index: -100;
-    animation-name: animationcircle;
+    animation-name: headerAnimation;
     animation-duration: 1s;
 }
-@keyframes animationcircle{
+@keyframes headerAnimation{
     from{
         transform: translateY(150px);
         opacity: 0;
