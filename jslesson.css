@@ -8,8 +8,22 @@ body{
 header{
     background-color: gray;
     align-content: center;
+    opacity: 0.9;
     height: 60px;
-    padding: 0px 70px 0px 0px;
+    padding-right: 70px;
+    z-index: -100;
+    animation-name: headerAnimation;
+    animation-duration: 1s;
+}
+@keyframes headerAnimation{
+    from{
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 nav{
     display: flex;
