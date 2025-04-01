@@ -97,16 +97,17 @@ header a.active{
 }
 
 /*developers animation*/
-.malupiton img{
+.razon_pic img{
     position: absolute;
+    border-radius: 100%;
     width: 400px;
     height: 400px;
     left: 50px;
     top: 90px;
     background: transparent;
-    z-index: -50;
-    animation-name: razon;
-    animation-duration: 2s;
+    border: solid rgb(0, 0, 0);
+    z-index: 10;
+    animation: razon 3s ease-out, vanish-diagonal 5s infinite 3s;
 }
 @keyframes razon{
     from{
@@ -118,21 +119,22 @@ header a.active{
         opacity: 1;
     }
 }
-.malupiton1 {
+.payno_pic {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
     position: relative;
 }
-.malupiton1 img{
+.payno_pic img{
     position: absolute;
+    border-radius: 100%;
     width: 400px;
     height: 400px;
     background: transparent;
-    z-index: -50;
-    animation-name: payno;
-    animation-duration: 2s;
+    border: solid white;
+    z-index: 10;
+    animation: payno 2.5s ease-out, vanish-diagonal 5s infinite 3.5s;
 }
 @keyframes payno{
     from{
@@ -144,16 +146,17 @@ header a.active{
         opacity: 1;
     }
 }
-.malupiton2 img{
+.norcio_pic img{
     position: absolute;
+    border-radius: 100%;
     width: 400px;
     height: 400px;
     right: 60px;
     top: 100px;
     background: transparent;
-    z-index: -50;
-    animation-name: norcio;
-    animation-duration: 3s;
+    border: solid white;
+    z-index: 10;
+    animation: norcio 3s ease-out, vanish-diagonal 5s infinite 4s;
 }
 @keyframes norcio{
     from{
@@ -165,7 +168,21 @@ header a.active{
         opacity: 1;
     }
 }
-
+@keyframes vanish-diagonal{
+    0%, 80% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    90% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+/*font_animation*/
 .blinking{
     display: flex;
     justify-content: center;
@@ -192,7 +209,42 @@ header a.active{
     blink 1s step-end infinite;
     animation-iteration-count: infinite;
 }
+/*names*/
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    text-align: center;
+    width: 100%;
+}
 
+.names ul {
+    display: flex;
+    gap: 320px;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.names ul li {
+    font-family: monospace;
+    list-style: none; 
+}
+
+.names ul li h1 {
+    color: rgb(240, 233, 233);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 2.5s steps(6) forwards,
+    blink 1s step-end infinite;
+    animation-iteration-count: infinite;
+}
 @keyframes typing{
     0%{
         width: 0;
@@ -207,51 +259,5 @@ header a.active{
 @keyframes blink {
     50% {
         border-color: transparent;
-    }
-}
-/*names*/
-.names {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    text-align: center;
-    width: 100%;
-}
-
-.names ul {
-    position: absolute;
-    display: flex;
-    gap: 300px;
-    padding: 0;
-    margin: 0;
-    list-style: none; 
-}
-
-.names ul li {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    list-style: none; 
-}
-
-.names ul li h1 {
-    color: rgb(240, 233, 233);
-    display: inline;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
-.names ul::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1005px;
-    height: 100%;
-    background: rgb(22, 21, 21);
-    animation: showleft 1s ease forwards;
-    animation-delay: 1s;
-}
-@keyframes showleft{
-    100%{
-        width: 0;
     }
 }
