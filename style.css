@@ -156,7 +156,7 @@ header a.active{
     background: transparent;
     border: solid white;
     z-index: 10;
-    animation: norcio 3s ease-out, vanish-diagonal 5s infinite 4    s;
+    animation: norcio 3s ease-out, vanish-diagonal 5s infinite 4s;
 }
 @keyframes norcio{
     from{
