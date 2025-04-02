@@ -8,7 +8,7 @@ body{
 header{
     background-color: gray;
     align-content: center;
-    opacity: 0.9;
+    opacity: 0.8;
     height: 60px;
     padding-right: 70px;
     z-index: -100;
@@ -22,7 +22,7 @@ header{
     }
     to {
         transform: translateX(0);
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 nav{
