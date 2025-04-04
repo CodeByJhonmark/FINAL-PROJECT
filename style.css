@@ -114,7 +114,7 @@ header a.active{
     background: transparent;
     border: solid rgb(0, 0, 0);
     z-index: 10;
-    animation: razon 3s ease-out, vanish-diagonal 5s infinite 3s;
+    animation: razon 1.5s ease-out, vanish-diagonal 5s infinite 3s;
 }
 @keyframes razon{
     from{
@@ -141,7 +141,7 @@ header a.active{
     background: transparent;
     border: solid white;
     z-index: 10;
-    animation: payno 2.5s ease-out, vanish-diagonal 5s infinite 3.5s;
+    animation: payno 1.5s ease-out, vanish-diagonal 5s infinite 3.5s;
 }
 @keyframes payno{
     from{
@@ -163,7 +163,7 @@ header a.active{
     background: transparent;
     border: solid white;
     z-index: 10;
-    animation: norcio 3s ease-out, vanish-diagonal 5s infinite 4s;
+    animation: norcio 1.5s ease-out, vanish-diagonal 5s infinite 4s;
 }
 @keyframes norcio{
     from{
@@ -176,11 +176,11 @@ header a.active{
     }
 }
 @keyframes vanish-diagonal{
-    0%, 80% {
+    0%, 50% {
         opacity: 1;
         transform: translate(0, 0);
     }
-    90% {
+    60% {
         opacity: 0;
         transform: translateY(-100px);
     }
