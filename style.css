@@ -17,6 +17,7 @@ header{
     opacity: 0.8;
     height: 60px;
     padding-right: 70px;
+    padding-left: 200px;
     z-index: -100;
     animation-name: headerAnimation;
     animation-duration: 1s;
@@ -35,6 +36,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+nav h1{
+    margin-right: auto;
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
 }
 nav ul{
     display: inline-block;
