@@ -12,13 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
   
     function showEditorWithCode(exampleId) {
       const exampleDiv = document.getElementById(exampleId);
-      const code = exampleDiv ? exampleDiv.innerHTML : '';
+      if (!exampleDiv) return;
+    
+      const clonedDiv = exampleDiv.cloneNode(true);
+    
+      const scripts = clonedDiv.querySelectorAll('script');
+      scripts.forEach(script => script.remove());
+    
+      const code = clonedDiv.innerHTML.trim();
     
       overlay.style.display = 'block';
       editorCard.style.display = 'block';
       htmlInput.value = code;
       outputPreview.innerHTML = code;
-
+    
       document.body.style.overflow = 'hidden';
     }
   
@@ -34,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (act1) {
       act1.addEventListener('click', () => showEditorWithCode('act1'));
     }
-  
+
     if (act2) {
       act2.addEventListener('click', () => showEditorWithCode('act2'));
     }
