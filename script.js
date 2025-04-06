@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     "act1" ng act2 ganon tapos yung buttonAct1 palitan din ng buttonAct2 */
     const act1 = document.getElementById('buttonAct1');
     const act2 = document.getElementById('buttonAct2');
+    const act17 = document.getElementById('buttonAct17');
+    const act18 = document.getElementById('buttonAct18');
+    const act19 = document.getElementById('buttonAct19');
+    const act20 = document.getElementById('buttonAct20');
     
     const editorCard = document.getElementById('editorCard');
     const closeCardBtn = document.getElementById('closeCardBtn');
@@ -44,6 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (act2) {
       act2.addEventListener('click', () => showEditorWithCode('act2'));
+    }
+    if (act17) {
+      act17.addEventListener('click', () => showEditorWithCode('act17'));
+    }
+    if (act18) {
+      act18.addEventListener('click', () => showEditorWithCode('act18'));
+    }
+    if (act19) {
+      act19.addEventListener('click', () => showEditorWithCode('act19'));
+    }
+    if (act20) {
+      act20.addEventListener('click', () => showEditorWithCode('act20'));
     }
 
     if (closeCardBtn) {
