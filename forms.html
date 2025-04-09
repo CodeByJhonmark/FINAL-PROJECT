@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Information Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            width: 50%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: none;
+            background-color: #0b4870;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-image: url('assets/bg2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <div class="container">
+        <h2>Employee Information Sheet</h2>
+        <form>
+            <div class="form-group">
+                <label>Full Name:</label>
+                <input type="text" name="last_name" required />
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Department:</label>
+                <select name="course">
+                    <option value="BSIT">IT Department</option>
+                    <option value="BSCS">Developer Department</option>
+                    <option value="BSED">Marketing Department</option>
+                    <option value="BSED">Research and Development</option>
+                    <option value="BSED">Legal Department</option>
+                    <option value="BSED">Administration Department</option>
+                    <option value="BSED">Human Resources Department</option>
+                    <option value="BSED">Finance / Accounting Department</option>
+                    <option value="BSED">Sales Department</option>
+                    <option value="BSED">Operations Department</option>
+                    <option value="BSED">Customer Service Department</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label>Birthdate:</label>
+                <input type="date" name="birthdate" required />
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" name="address" required />
+            </div>
+            <div class="form-group">
+                <label>Contact:</label>
+                <input type="tel" name="contact" required />
+            </div>
+            <div class="form-group">
+                <label>Upload Companey ID Picture:</label>
+                <input type="file" name="fileupload" accept="image/*" />
+            </div>
+            <input type="submit" name="submit" value="Submit" class="submit-btn" />
+        </form>
+    </div>
+</body>
+</html>
