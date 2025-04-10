@@ -58,9 +58,12 @@ header ul li a{
     color: white;
     font-weight: 500;
 }
-header a:hover,
+header a:hover{
+    color: #000000;
+}
 header a.active{
     color: #000000;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 /*DROPDOWN*/

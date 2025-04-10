@@ -31,7 +31,7 @@
                 <ul>
                     <li><a href="index.html">Back</a></li>
                 </ul>
-                <h1>CSS LESSON</h1>
+                <h1>CSS <span style="background-color: orange; color: black; padding: 2px 10px 2px 10px; border-radius: 5px;"> LESSON</span></h1>
             </nav>
         </header>
         <div class="folder">
@@ -336,6 +336,23 @@
                 </button>
             </div>
         </div>
+
+        <!-- Input And Output box -->
+        <div class="overlay" id="overlay"></div>
+        <div class="card" id="editorCard">
+            <button class="close-btn" id="closeCardBtn">✕</button>
+            <div class="editor-container">
+              <div class="input-section">
+                <div class="section-title">INPUT</div>
+                <textarea id="htmlInput" placeholder="Type HTML code here..."></textarea>
+              </div>
+              <div class="output-section">
+                <div class="section-title">OUTPUT</div>
+                <div class="output-box" id="outputPreview"></div>
+              </div>
+            </div>
+        </div>
+
             <a href="#head" class="GoUp"><img src="assets/GoTop.png" alt=""></a>
     </div>
 </body>
