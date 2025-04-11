@@ -122,7 +122,7 @@ header a:hover{
 }
 .file:hover{
     background-color: #e9e8e8;
-    padding: 15px;
+    transform: scale(1.05);
 }
 .htmlImage{
     width: 200px;

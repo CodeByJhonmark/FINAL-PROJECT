@@ -119,11 +119,12 @@ header a:hover{
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     font-size: 18px;
+    overflow: hidden;
     transition: ease-out 0.4s;
 }
 .file:hover{
     background-color: #e9e8e8;
-    padding: 15px;
+    transform: scale(1.05);
 }
 .htmlImage{
     width: 200px;
