@@ -44,6 +44,21 @@ header{
 .GoUp img:hover{
     padding-bottom: 25px;
 }
+.logo{
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logowithname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logowithname h1{
+    font-family: monospace;
+}
 nav{
     display: flex;
     align-items: center;
@@ -51,15 +66,16 @@ nav{
 }
 nav h1{
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
-    padding: 10px 5px 10px 10px;
-    border-radius: 5px;
+    font-size: 25px;
+    font-family: monospace;
+}
+.cssLesson{
+    border-bottom: solid 2px rgb(0, 0, 0);
 }
 header ul li{
     list-style: none;
     display: inline-block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: monospace;
     padding-left: 15px;
     padding-right: 15px;
 }
