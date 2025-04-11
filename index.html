@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-        <title>Web Design Finals</title>
+        <title>Web Development</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="loading.css">
         <link rel="shortcut icon" href="assets/logowithoutname.png" type="image/x-icon"> 
@@ -41,12 +41,12 @@
                     </ul>
                 
                     <div class="dropdown">
-                                <button>Lessons</button>
+                                <button class="btnLesson">Lessons</button>
                         <div class="content">
                                 <a href="htmlLesson.html">HTML</a>
                                 <a href="cssLesson.html">CSS</a>
                                 <a href="javascriptLesson.html">JAVASCRIPT</a>
-                                <a href="https://codebyjhonmark.github.io/The-Drip-Bite/" target="new">ALL ACTIVITY IN 1 PROJECT</a>
+                                <button class="card" onclick="openPopup()">ALL ACTIVITY IN 1 PROJECT</button>
                         </div>
                     </div>
                 </nav>
@@ -57,6 +57,50 @@
                     <h1>Let's Learn Coding.</h1>
                 </div>
             </div>
+
+            <div id="overlay" class="container" onclick="closePopup(event)">
+                <div class="popup-content">
+                    <h1><span style="color: rgb(255, 255, 255); border-bottom: solid 2px black;">All Activity</span> In A Project</h1>
+
+                    <div class="button-group">
+                        <div class="project-item">
+                            <h2>Cap Shop <br> BY: <span style="border-bottom: solid 1px black;">DIONICIO</span></h2>
+                            <a href="https://dionicioamang.github.io/Cap-Shop/" target="new">
+                                <img src="assets/capshop.jpg" alt="Project 2" class="project-image">
+                            </a>
+                        </div>
+
+                        <div class="project-item">
+                            <h2>The Drip Bite BY:<span style="border-bottom: solid 1px black;">JHONMARK</span></h2>
+                            <a href="https://codebyjhonmark.github.io/The-Drip-Bite/" target="new">
+                                <img src="assets/thedripbite.png" alt="Project 1" class="project-image">
+                            </a>
+                        </div>
+                    
+                        <div class="project-item">
+                            <h2>Hustle Fits <br> BY: <span style="border-bottom: solid 1px black;">SEAN</span></h2>
+                            <a href="https://ryu1n.github.io/hustlefits/" target="new">
+                                <img src="assets/logowithname.png" alt="Project 3" class="project-image">
+                            </a>
+                        </div>
+                    </div>
+                                       
+                </div>
+            </div>
+
     </div>
+
+
+    <script>
+        function openPopup() {
+          document.getElementById('overlay').style.display = 'flex';
+        }
+    
+        function closePopup(event) {
+          if (event.target.id === 'overlay') { 
+            document.getElementById('overlay').style.display = 'none';
+          }
+        }
+      </script>
 </body>
 </html>
