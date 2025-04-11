@@ -4,6 +4,10 @@
 }
 body{
     background-color: rgb(0, 0, 0);
+    overflow: scroll; 
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 html{
     scroll-behavior: smooth;

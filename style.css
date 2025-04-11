@@ -4,7 +4,12 @@
 }
 body{
     background-color: rgb(0, 0, 0);
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
 #backgroundImage{
     position: absolute;
     height: 100%;
@@ -14,13 +19,13 @@ body{
 header{
     background-color: gray;
     align-content: center;
-    opacity: 0.8;
     height: 60px;
     padding-right: 70px;
-    padding-left: 200px;
+    padding-left: 180px;
     z-index: -100;
     animation-name: headerAnimation;
     animation-duration: 1s;
+    border-bottom: solid rgb(0, 0, 0);
 }
 @keyframes headerAnimation{
     from{
@@ -31,6 +36,12 @@ header{
         transform: translateX(0);
         opacity: 0.8;
     }
+}
+.logo{
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -105,15 +116,38 @@ header a.active{
     background-color: black;
     border-radius: 10px;
 }
-
+/*devs*/
+.developers{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.file{
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: ease-out 0.4s;
+    align-self: center;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: solid rgb(0, 0, 0);
+    object-fit: cover;
+}   
+p{
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
 /*developers animation*/
 .razon_pic img{
-    position: absolute;
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
-    left: 50px;
-    top: 90px;
     background: transparent;
     border: solid rgb(0, 0, 0);
     z-index: 10;
@@ -129,18 +163,7 @@ header a.active{
         opacity: 1;
     }
 }
-.payno_pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    position: relative;
-}
 .payno_pic img{
-    position: absolute;
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
     background: transparent;
     border: solid white;
     z-index: 10;
@@ -157,12 +180,6 @@ header a.active{
     }
 }
 .norcio_pic img{
-    position: absolute;
-    border-radius: 100%;
-    width: 400px;
-    height: 400px;
-    right: 60px;
-    top: 100px;
     background: transparent;
     border: solid white;
     z-index: 10;
@@ -222,36 +239,28 @@ header a.active{
 /*names*/
 .names {
     display: flex;
+    margin-top: 30px;
     align-items: center;
     justify-content: center;    
     text-align: center;
     width: 100%;
-}
-
-.names ul {
     display: flex;
-    gap: 320px;
     padding: 0;
-    margin: 0;
-    list-style: none; 
-}
-
-.names ul li {
     font-family: monospace;
-    list-style: none; 
 }
 
-.names ul li h1 {
+.names h1 {
     color: rgb(240, 233, 233);
     display: inline-block;
     text-decoration: none;
     font-size: 35px;
+    max-width: 130px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
-    animation: typing 2.5s steps(6) forwards,
+    animation: typing 3.5s steps(15) forwards,
     blink 1s step-end infinite;
     animation-iteration-count: infinite;
 }
@@ -271,3 +280,4 @@ header a.active{
         border-color: transparent;
     }
 }
+/*contact content*/
