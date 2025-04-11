@@ -96,7 +96,7 @@ header a.active{
     padding: 10px 15px;
     transition: ease-out 0.3s;  
 }
-.dropdown .content{
+.dropdown .content1{
     display: none;
     position: absolute;
     font-family: monospace;
@@ -115,7 +115,7 @@ header a.active{
     background-color: #000000;
     color: rgb(241, 236, 236);
 }
-.dropdown:hover .content{
+.dropdown:hover .content1{
     display: block;
 }
 .dropdown a:hover{
