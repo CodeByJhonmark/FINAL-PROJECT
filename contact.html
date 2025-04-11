@@ -40,7 +40,51 @@
             </ul>
         </nav>
     </header>
-
+    <div class="container">
+        <div class="image-row">
+          <div class="image-wrapper" onclick="showContent(this)">
+            <img src="assets/Payno.jpeg" alt="Image 1">
+            <div class="content" onmouseleave="hideContent(this)">
+              <p>Some information about Image 1</p>
+            </div>
+          </div>
+          <h1 class="name">Hi, I'm Jhonmark 1st Year BSIT Student. <br> You can contact me by clicking my picture.</h1>
+        </div>
+      
+        <div class="image-row">
+          <div class="image-wrapper" onclick="showContent(this)">
+            <img src="assets/Razon.jpg" alt="Image 2">
+            <div class="content" onmouseleave="hideContent(this)">
+              <p>Some information about Image 2</p>
+            </div>
+          </div>
+          <h1 class="name">Hi, I'm Dionicio 1st Year BSIT Student. <br> You can contact me by clicking my picture.</h1>
+        </div>
+      
+        <div class="image-row">
+          <div class="image-wrapper" onclick="showContent(this)">
+            <img src="assets/Norcio.jpg" alt="Image 3">
+            <div class="content" onmouseleave="hideContent(this)">
+              <p>Some information about Image 3</p>
+            </div>
+          </div>
+          <h1 class="name">Hi, I'm Sean Andrei 1st Year BSIT Student. <br> You can contact me by clicking my picture.</h1>
+        </div>
+      </div>
+    
     </div>
+    <script>
+        function showContent(element) {
+        document.querySelectorAll('.image-wrapper').forEach(wrapper => {
+        wrapper.classList.remove('active');
+        });
+  
+        element.classList.add('active');
+        }
+
+        function hideContent(contentElement) {
+        contentElement.parentElement.classList.remove('active');
+        }
+      </script>
 </body>
 </html>
