@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }
 body{
@@ -336,7 +335,7 @@ p{
     text-align: center; 
 }
 .project-item h2 {
-    width: 150px;
+    width: 170px;
     font-family: monospace;
     font-size: 18px;
     margin-bottom: 10px;
@@ -410,6 +409,7 @@ form {
     color: #ecf0f1; 
     outline: none; 
     transition: all 0.3s ease; 
+    box-sizing: border-box;
   }
   .form-group input:focus, .form-group textarea:focus, .form-group select:focus, .form-group input[type="file"]:focus { 
     border-color: #ffffff; 
