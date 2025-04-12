@@ -39,33 +39,40 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const editorCard = document.getElementById('editorCard');
     const closeCardBtn = document.getElementById('closeCardBtn');
+    const outputIframe = document.getElementById('outputIframe');
     const htmlInput = document.getElementById('htmlInput');
-    const outputPreview = document.getElementById('outputPreview');
     const overlay = document.getElementById('overlay');
   
     function showEditorWithCode(exampleId) {
       const exampleDiv = document.getElementById(exampleId);
       if (!exampleDiv) return;
     
+      let code = '';
+      Array.from(exampleDiv.children).forEach(child => {
+          code += child.outerHTML + '\n'; 
+      });
       const clonedDiv = exampleDiv.cloneNode(true);
-    
+
       const scripts = clonedDiv.querySelectorAll('script');
       scripts.forEach(script => script.remove());
     
-      const code = clonedDiv.innerHTML.trim();
-    
+      htmlInput.value = code.trim();
+
+      const iframeDocument = outputIframe.contentWindow.document;
+      iframeDocument.open();
+      iframeDocument.write(code);
+      iframeDocument.close();
+
+      
       overlay.style.display = 'block';
       editorCard.style.display = 'block';
       htmlInput.value = code;
-      outputPreview.innerHTML = code;
-    
       document.body.style.overflow = 'hidden';
     }
   
     function closeEditor() {
       overlay.style.display = 'none';
       editorCard.style.display = 'none';
-  
       document.body.style.overflow = '';
     }
   
@@ -184,7 +191,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (htmlInput) {
       htmlInput.addEventListener('input', () => {
-        outputPreview.innerHTML = htmlInput.value;
+          const iframeDocument = outputIframe.contentWindow.document;
+          iframeDocument.open();
+          iframeDocument.write(htmlInput.value);
+          iframeDocument.close();
       });
     }
   });

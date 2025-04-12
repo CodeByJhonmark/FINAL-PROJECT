@@ -3,7 +3,8 @@
     <title>Web Development/javaScript Lesson</title>
     <link rel="stylesheet" href="jslesson.css">
     <link rel="stylesheet" href="loading.css">
-    <link rel="shortcut icon" href="assets/logowithoutname.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="assets/logowithoutname.png" type="image/x-icon">
+    <script src="script.js"></script> 
 </head>
 <body>
     <!-- Loading -->  
@@ -47,65 +48,266 @@
             <div class="file">
                 <button id="buttonAct1">
                     <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>1</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct2">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>2</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct3">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>3</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct4">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>4</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct5">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>5</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct6">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>6</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct7">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>7</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct8">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>8</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct9">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>9</h3>
-                </button>
-            </div>
-            <div class="file">
-                <button id="buttonAct9">
-                    <img src="assets/js_image.png" alt="" class="htmlImage">
-                    <h3>10</h3>
+                    <h3>Id Selector</h3>
                 </button>
             </div>
 
+        <div id="act1" style="display:none;"> 
+        <center>
+            <div style="border: 2px solid black;">
+            <h1>Id Selector</h1>
+            <p id="demo">Click the button to change this text.</p>
+            <button onclick="changeText()" style="border: 1px solid black;">Click Me</button>
+
+            <script>
+            function changeText() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+            </script>
+            </div>
+        </center>   
         </div>
+
+            <div class="file">
+                <button id="buttonAct2">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Class Selector</h3>
+                </button>
+            </div>
+
+        <div id="act2" style="display:none;"> 
+            <center>
+                <div style="border: 2px solid black;">
+                    <h1>Class Selector</h1>
+                    <p class="sample">First paragraph.</p>
+                    <p class="sample">Second paragraph.</p>
+                    <button onclick="changeClassText()">Change Texts</button>
+
+                    <script>
+                    function changeClassText() {
+                    let elements = document.getElementsByClassName("sample");
+                    for (let i = 0; i < elements.length; i++) {
+                        elements[i].innerHTML = "Text changed!";
+                    }
+                    }
+                    </script>
+                </div>
+            </center>   
+            </div>
+
+            <div class="file">
+                <button id="buttonAct3">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Element Selector</h3>
+                </button>
+            </div>
+            <div id="act3" style="display:none;"> 
+            <center>
+                <div style="border: 2px solid black;">
+                    <h1>Element Selector</h1>
+                    <p>First paragraph.</p>
+                    <p>Second paragraph.</p>
+                    <button onclick="changeAllParagraphs()">Change Paragraphs</button>
+                    
+                    <script>
+                    function changeAllParagraphs() {
+                      let paragraphs = document.getElementsByTagName("p");
+                      for (let i = 0; i < paragraphs.length; i++) {
+                        paragraphs[i].style.color = "blue";
+                      }
+                    }
+                    </script>  
+                </div>
+            </center>   
+            </div>
+            
+            <div class="file">
+                <button id="buttonAct4">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Query Selector</h3>
+                </button>
+            </div>
+
+            <div id="act4" style="display:none;"> 
+            <center>
+                <div style="border: 2px solid black;">
+                    <h1>Query Selector</h1>
+                    <h1 class="highlight">Heading</h1>
+                    <p class="highlight">Paragraph one.</p>
+                    <p>Paragraph two.</p>
+                    <button onclick="highlightText()">Highlight</button>
+
+                    <script>
+                    function highlightText() {
+                    let highlights = document.querySelectorAll(".highlight");
+                    highlights.forEach(function(item) {
+                        item.style.backgroundColor = "yellow";
+                    });
+                    }
+                    </script>    
+                </div>
+            </center>   
+            </div>
+
+            <div class="file">
+                <button id="buttonAct5">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Event Listener</h3>
+                </button>
+            </div>
+
+            <div id="act5" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Event Listener</h1>
+                        <button id="btn">Click Me</button>
+                        <p id="result"></p>
+
+                        <script>
+                        document.getElementById("btn").addEventListener("click", function() {
+                        document.getElementById("result").innerHTML = "Button was clicked!";
+                        });
+                        </script>
+                    </div>
+                </center>   
+                </div>
+
+            <div class="file">
+                <button id="buttonAct6">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Change Image</h3>
+                </button>
+            </div>
+
+            <div id="act6" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Change Image</h1>
+                        <img id="myImage" src="assets/logowithoutname.png" width="150" height="150">
+                        <br><br>
+                        <button onclick="changeImage()">Change Image</button>
+
+                        <script>
+                        function changeImage() {
+                        document.getElementById("myImage").src = "assets/logowithname.png";
+                        }
+                        </script>
+                    </div>
+                </center>   
+                </div>
+
+            <div class="file">
+                <button id="buttonAct7">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Show and Hide Text</h3>
+                </button>
+            </div>
+
+            <div id="act7" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Show and Hide Text</h1>
+                        <p id="text">This is some text.</p>
+                        <button onclick="hideText()">Hide</button>
+                        <button onclick="showText()">Show</button>
+
+                        <script>
+                        function hideText() {
+                        document.getElementById("text").style.display = "none";
+                        }
+                        function showText() {
+                        document.getElementById("text").style.display = "block";
+                        }
+                        </script>
+                    </div>
+                </center>   
+                </div>
+
+            <div class="file">
+                <button id="buttonAct8">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Alert</h3>
+                </button>
+            </div>
+
+            <div id="act8" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Alert</h1>
+                        <button onclick="showAlert()">Show Alert</button>
+                        <script>
+                        function showAlert() {
+                        alert("Welcome to Web Development!!");
+                        }
+                        </script>
+                    </div>
+                </center>   
+                </div>
+
+            <div class="file">
+                <button id="buttonAct9">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Prompt Box</h3>
+                </button>
+            </div>
+
+            <div id="act9" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Prompt Box</h1>
+                        <button onclick="askName()">Enter Your Name</button>
+                        <p id="greeting"></p>
+
+                        <script>
+                        function askName() {
+                        let name = prompt("What is your name?");
+                        if (name != null) {
+                            document.getElementById("greeting").innerHTML = "Hello " + name + "!";
+                        }
+                        }
+                        </script>
+                    </div>
+                </center>   
+                </div>
+            <div class="file">
+                <button id="buttonAct10">
+                    <img src="assets/js_image.png" alt="" class="htmlImage">
+                    <h3>Change Background</h3>
+                </button>
+            </div>
+
+            <div id="act10" style="display:none;"> 
+                <center>
+                    <div style="border: 2px solid black;">
+                        <h1>Change Background</h1>
+                        <button onclick="changeBackground()">Change Background Color</button>
+
+                        <script>
+                        function changeBackground() {
+                        document.body.style.backgroundColor = "lightblue";
+                        }
+                        </script>
+                    </div>
+                </center>   
+                </div>
+
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+        <div class="card" id="editorCard">
+            <button class="close-btn" id="closeCardBtn">✕</button>
+            <div class="editor-container">
+                <div class="input-section">
+                    <div class="section-title">INPUT</div>
+                    <textarea id="htmlInput" placeholder="Type HTML code here..."></textarea>
+                </div>
+                <div class="output-section">
+                    <div class="section-title">OUTPUT</div>
+                    <iframe id="outputIframe" class="output-box"></iframe>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

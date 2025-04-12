@@ -159,10 +159,53 @@ p{
     color: white;
     margin-top: 30px;
 }
+.icons{
+    display: flex;
+    justify-content: center;    
+    align-items: center;     
+    gap: 15px;
+}
+.icons a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.icons a:hover{
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+}
+.icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: .5s;
+}
+.icons a:hover::before{
+    width: 100%;
+}
+
 /*developers animation*/
 .razon_pic img{
     background: transparent;
-    border: solid rgb(0, 0, 0);
+    border: solid rgb(255, 255, 255);
     z-index: 10;
     animation: razon 1.5s ease-out, vanish-diagonal 5s infinite 3s;
 }
@@ -266,9 +309,9 @@ p{
     color: rgb(240, 233, 233);
     display: inline-block;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 33px;
     max-width: 130px;
-    margin: 0;
+    margin: 0px 0px 10px 0px;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
