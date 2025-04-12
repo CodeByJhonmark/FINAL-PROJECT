@@ -109,17 +109,17 @@
             <div id="act4" style="display:none;">
                 <div>
                     <style>
-                        p.center {
+                        .center {
                             text-align: center;
                             color: red;
                         }
-                        p.large {
+                        .large {
                             font-size: 300%;
                         }
                         </style>
                         <h1>This heading will not be affected</h1>
                         <p class="center">This paragraph will be red and center-aligned.</p>
-                        <p class="center large">This paragraph will be red, center-aligned, and in a large font-size.</p>
+                        <p class="large">This paragraph will be red, center-aligned, and in a large font-size.</p>
                 </div>
             </div>
 
@@ -133,14 +133,14 @@
             <div id="act5" style="display:none;">
                 <div>
                     <style>
-                        h1, h2, p {
+                        .h, .h1, .p1 {
                             text-align: center;
                             color: red;
                         }
                         </style>
-                         <h1>Hello World!</h1>
-                         <h2>Smaller heading!</h2>
-                         <p>This is a paragraph.</p>                        
+                         <h1 class="h">Hello World!</h1>
+                         <h2 class="h1">Smaller heading!</h2>
+                         <p class="p1">This is a paragraph.</p>                        
                 </div>
             </div>
 
@@ -154,7 +154,7 @@
             <div id="act6" style="display:none;">
                 <div>
                     <style>
-                        p {
+                        .sulat {
                             color: red;
                             /* This is a single-line comment */
                             text-align: center;
@@ -164,9 +164,9 @@
                         a multi-line
                         comment */
                         </style>
-                         <p>Hello World!</p>
-                         <p>This paragraph is styled with CSS.</p>
-                         <p>CSS comments are not shown in the output.</p>                        
+                         <p class="sulat">Hello World!</p>
+                         <p class="sulat">This paragraph is styled with CSS.</p>
+                         <p class="sulat">CSS comments are not shown in the output.</p>                        
                 </div>
             </div>
 
@@ -190,16 +190,15 @@
             </div>
             <div id="act8" style="display:none;">
                 <div>
-                    <style>
-                        h1 {
-                            color: maroon;
-                            margin-left: 40px;
-                        } 
-                        </style>
-                        <body>
-                         <h1>This is a heading</h1>
-                        <p>This is a paragraph.</p>
-                </div>
+            <style>
+                    .walanakongmaisip{
+                        color: maroon;
+                        margin-left: 40px;
+                    } 
+            </style>
+                <h1 class="walanakongmaisip">This is a heading</h1>
+                <p>This is a paragraph.</p>
+            </div>
             </div>
 
             <div class="file">
@@ -236,7 +235,7 @@
             <div class="file">
                 <button id="buttonAct11">
                     <img src="assets/css3.png" alt="" class="htmlImage">
-                    <h3>Background Color</h3>
+                    <h3>Text Background Color</h3>
                 </button>
             </div>
 
@@ -286,9 +285,9 @@
             </div>
 
             <div id="act14" style="display:none;">
-                <div>
+                <div class="bgcolor">
                     <style>
-                        body {
+                        .bgcolor {
                             background-color: rgb(0, 0, 0);
                         }
                         </style>
@@ -297,103 +296,108 @@
                          <p>This page has a black background color!</p>
                 </div>
             </div>
-        </div>
 
-        <div class="file">
-            <button id="buttonAct15">
-                <img src="assets/css3.png" alt="" class="htmlImage">
-                <h3>Background Color Any Element</h3>
-            </button>
-        </div>
-
-        <div id="act15" style="display:none;">
-            <div>
-                <style>
-                    h1 {
-                        background-color: Red;
-                    }
-                    div {
-                        background-color: black;
-                    }
-                    p {
-                        background-color: pink;
-                    }
-                    </style>
-                     <h1>CSS background-color example!</h1>
-                     <div>
-                     This is a text inside a div element.
-                     <p>This paragraph has its own background color.</p>
-                     We are still in the div element.
+            <div class="file">
+                <button id="buttonAct15">
+                    <img src="assets/css3.png" alt="" class="htmlImage">
+                    <h3>Background Color <br> Any Element</h3>
+                </button>
+            </div>
+    
+            <div id="act15" style="display:none;">
+                <div class="temporary body">
+                    <style>
+                        .h1 {
+                            background-color: Red;
+                        }
+                        .temporary body {
+                            background-color: black;
+                        }
+                        p {
+                            background-color: pink;
+                        }
+                        </style>
+                         <h1 class="h1">CSS background-color example!</h1>
+                    <div>
+                         This is a text inside a div element.
+                         <p>This paragraph has its own background color.</p>
+                         We are still in the div element.
+                    </div>
             </div>
         </div>
-    </div>
-
+    
+        <div class="file">
+            <button id="buttonAct16">
+                <img src="assets/css3.png" alt="" class="htmlImage">
+                <h3>Background Image</h3>
+            </button>
+        </div>
+    
+        <div id="act16" style="display:none;">
+            <div class="example_bg">
+                <style>
+                    .example_bg{
+                        background-image: url("assets/logowithoutname.png");
+                        margin: 0;
+                        height: 400px;
+                    }
+                    </style>
+                     <h1>Hello World!</h1>
+    
+                     <p>This page has an image as the background!</p>
+            </div>
+        </div>
+        
     <div class="file">
-        <button id="buttonAct16">
+        <button id="buttonAct17">
             <img src="assets/css3.png" alt="" class="htmlImage">
-            <h3>Background Image</h3>
+            <h3>Background Image Reapeat <br> Horizontal Or Vertical</h3>
         </button>
     </div>
-
-    <div id="act16" style="display:none;">
-        <div>
+    
+    <div id="act17" style="display:none;">
+        <div class="temp_body">
             <style>
-                body {
-                    background-image: url("assets/bg4.jpg");
+                .temp_body {
+                    background-image: url("assets/logowithoutname.png");
+                    background-repeat: repeat-y;
+                    margin: 0;
+                    height: 400px;
                 }
                 </style>
-                 <h1>Hello World!</h1>
-
-                 <p>This page has an image as the background!</p>
+    
+                    <h1>Hello Coder</h1>
+                    <p>This is a background image is repeated only horizontally</p>
         </div>
     </div>
-</div> 
     
-<div class="file">
-    <button id="buttonAct17">
-        <img src="assets/css3.png" alt="" class="htmlImage">
-        <h3>Background Image Reapeat</h3>
-        <h3>Horizontal Or Vertical</h3>
-    </button>
-</div>
-
-<div id="act17" style="display:none;">
-    <div>
-        <style>
-            body {
-                background-image: url("assets/bg5.jpg");
-                background-repeat: repeat-y;
-            }
-            </style>
-
-                <h1>Hello Coder</h1>
-                <p>This is a background image is repeated only horizontally</p>
+    
+    <div class="file">
+        <button id="buttonAct18">
+            <img src="assets/css3.png" alt="" class="htmlImage">
+            <h3>Background Image <br> No Reapeat</h3>
+        </button>
     </div>
-</div>
-</div>
-
-<div class="file">
-    <button id="buttonAct18">
-        <img src="assets/css3.png" alt="" class="htmlImage">
-        <h3>Background Image No Reapeat</h3>
-    </button>
-</div>
-
-<div id="act18" style="display:none;">
-    <div>
-        <style>
-            body {
-                background-image: url("assets/bg5.jpg");
-                background-repeat: no-repeat;
-            }
-            </style>
-
-           <h1>Hello World!</h1>
-           <p>background image example.</p>
-           <p>The background image is only showing once, but it is disturbing the reader!</p>
+    
+    <div id="act18" style="display:none;">
+        <div class="t">
+            <style>
+                .t {
+                    background-image: url("assets/logowithname.png");
+                    background-repeat: no-repeat;
+                    margin: 0;
+                    height: 400px;
+                }
+                </style>
+    
+               <h1>Hello World!</h1>
+               <p>background image example.</p>
+               <p>The background image is only showing once, but it is disturbing the reader!</p>
+        </div>
     </div>
-</div>
-</div>
+
+    </div><!--End of folder-->
+
         <!-- Input And Output box -->
         <div class="overlay" id="overlay"></div>
         <div class="card" id="editorCard">
