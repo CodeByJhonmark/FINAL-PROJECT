@@ -80,16 +80,16 @@ header ul li{
     padding-right: 15px;
 }
 header ul li a{
-    font-size: large;
-    color: white;
-    background-color: black;
-    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background-color: #e0e0e0;
+    padding: 8px 15px;
     border-radius: 5px;
     transition: ease-out 0.3s; 
 }
 header a:hover{
-    background-color: rgb(239, 231, 231);
-    color: black;
+    background-color: black;
+    color: rgb(255, 255, 255);
 }
 /*content*/
 .folder{
@@ -145,7 +145,7 @@ button:hover{
     width: 1200px;
     height: 550px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -207,7 +207,8 @@ textarea {
     overflow: auto;
   }
 .section-title {
-    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 15px;
     font-family: monospace;
     font-size: 25px;
     font-weight: bold;

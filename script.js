@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const act31 = document.getElementById('buttonAct31');
     const act32 = document.getElementById('buttonAct32');
     const act33 = document.getElementById('buttonAct33');
+    const act34 = document.getElementById('buttonAct34');
 
     
     const editorCard = document.getElementById('editorCard');
@@ -170,7 +171,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (act33) {
       act33.addEventListener('click', () => showEditorWithCode('act33'));
     }
-    
+    if (act34) {
+      act34.addEventListener('click', () => showEditorWithCode('act34'));
+    }
     if (closeCardBtn) {
       closeCardBtn.addEventListener('click', closeEditor);
     }
