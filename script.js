@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const act40 = document.getElementById('buttonAct40');
     const act41 = document.getElementById('buttonAct41');
     const act42 = document.getElementById('buttonAct42');
+    const act43 = document.getElementById('buttonAct43');
+    const act44 = document.getElementById('buttonAct44');
+    const act45 = document.getElementById('buttonAct45');
+    const act46 = document.getElementById('buttonAct46');
+    const act47 = document.getElementById('buttonAct47');
+    const act48 = document.getElementById('buttonAct48');
+    const act49 = document.getElementById('buttonAct49');
+    const act50 = document.getElementById('buttonAct50');
 
     
     const editorCard = document.getElementById('editorCard');
@@ -212,6 +220,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (act42) {
       act42.addEventListener('click', () => showEditorWithCode('act42'));
+    }
+    if (act43) {
+      act43.addEventListener('click', () => showEditorWithCode('act43'));
+    }
+    if (act44) {
+      act44.addEventListener('click', () => showEditorWithCode('act44'));
+    }
+    if (act45) {
+      act45.addEventListener('click', () => showEditorWithCode('act45'));
+    }
+    if (act46) {
+      act46.addEventListener('click', () => showEditorWithCode('act46'));
+    }
+    if (act47) {
+      act47.addEventListener('click', () => showEditorWithCode('act47'));
+    }
+    if (act48) {
+      act48.addEventListener('click', () => showEditorWithCode('act48'));
+    }
+    if (act49) {
+      act49.addEventListener('click', () => showEditorWithCode('act49'));
+    }
+    if (act50) {
+      act50.addEventListener('click', () => showEditorWithCode('act50'));
     }
     if (closeCardBtn) {
       closeCardBtn.addEventListener('click', closeEditor);

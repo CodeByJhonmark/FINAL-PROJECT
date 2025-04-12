@@ -178,7 +178,18 @@
             </div>
 
             <div id="act7" style="display:none;">
-               <div></div>
+               <div>
+                <h1>External css</h1>
+
+                    <h1>Put the link inside the head in html</h1>
+	                <p>Example is in the code</p>
+                    <!--
+                    <head>
+                        <title>Title</title>
+                        <link rel="stylesheet" type="text/css" href="style.css">
+                    </head>
+                    -->
+               </div>
             </div>
 
 
@@ -962,7 +973,7 @@
     <div class="file">
         <button id="buttonAct41">
             <img src="assets/css3.png" alt="" class="htmlImage">
-            <h3>CSS Opacity/Transparency</h3>
+            <h3>Opacity/Transparency</h3>
         </button>
     </div>
 
@@ -986,28 +997,459 @@
     <div class="file">
         <button id="buttonAct42">
             <img src="assets/css3.png" alt="" class="htmlImage">
-            <h3>CSS Opacity/Transparency</h3>
+            <h3>Opacity/Transparency <br> and hover</h3>
         </button>
     </div>
 
     <div id="act42" style="display:none;">
         <div class="t">
             <style>
-                img {
+                .pic {
                     opacity: 0.5;
                     filter: alpha(opacity=50); /* For IE8 and earlier */
                 }
-                img:hover {
+                .pic:hover {
                     opacity: 1.0;
                     filter: alpha(opacity=100); /* For IE8 and earlier */
                 }
                 </style>
                 <h1>Image Transparency</h1>
                 <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
-                <img src="assets/logowithname.png" alt="Image failed to load." width="170" height="100">                                                 
+                <img class="pic" src="assets/logowithname.png" alt="Image failed to load." width="170" height="100">                                                 
         </div>
     </div>
+    <div class="file">
+        <button id="buttonAct43">
+            <img src="assets/css3.png" alt="" class="htmlImage">
+            <h3>Vertical Navbar</h3>
+        </button>
+    </div>
+    
+    <div id="act43" style="display:none;">
+	<div>
+        <center>
+            <style>
+                .unorderlist {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #f1f1f1;
+                    border-radius: 10px;
+                }
+                
+                .list a {
+                    display: block;
+                    color: #000;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    transition: ease-out 0.3s;
+                }
+                .list a:hover {
+                    border-radius: 10px;
+                    background-color: #555;
+                    color: white;
+                }
+                </style>
+                <h2>Vertical Navigation Bar</h2>
+    
+                <ul class="unorderlist">
+                  <li class="list"><a href="#home">Home</a></li>
+                  <li class="list"><a href="#news">News</a></li>
+                  <li class="list"><a href="#contact">Contact</a></li>
+                  <li class="list"><a href="#about">About</a></li>
+                </ul>
+        </center>
+    </div>
+    </div> 
+
+    <div class="file">
+        <button id="buttonAct44">
+            <img src="assets/css3.png" alt="" class="htmlImage">
+            <h3>Active And Current <br> navlinks</h3>
+        </button>
+    </div>
+    
+    <div id="act44" style="display:none;">
+	<div>
+        <center>
+            <style>
+                .unlist {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #f1f1f1;
+                    border-radius: 10px;
+                }
+                
+                .lis a {
+                    display: block;
+                    color: #000;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                }
+                .lis a.activee {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .lis a:hover:not(.activee) {
+                    background-color: #555;
+                    color: white;
+                }
+                .activee {
+                    background-color: #4CAF50;
+                }
+                </style>
+                <h2>Vertical Navigation Bar</h2>
+                <p>In this example, we create an "active" class with a green background color and a white text. The class is added to the "Home" link.</p>                
+    
+                <ul class="unlist">
+                  <li class="lis"><a class="activee" href="#home">Home</a></li>
+                  <li class="lis"><a href="#news">News</a></li>
+                  <li class="lis"><a href="#contact">Contact</a></li>
+                  <li class="lis"><a href="#about">About</a></li>
+                </ul>
+        </center>
+    </div>
+    </div> 
+    <div class="file">
+        <button id="buttonAct45">
+            <img src="assets/css3.png" alt="" class="htmlImage">
+            <h3>Center the navlinks <br> and put border</h3>
+        </button>
+    </div>
+    
+    <div id="act45" style="display:none;">
+	<div>
+        <center>
+            <style>
+                .unlis {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #f1f1f1;
+                    border-radius: 10px;
+                }
+                
+                .li a {
+                    display: block;
+                    color: #000;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    border-bottom: 1px solid #555;
+                }
+                .li:last-child {
+                    border-bottom: none;
+                }
+                .li a.actvee {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                .li a:hover:not(.actvee) {
+                    background-color: #555;
+                    color: white;
+                }
+                .activee {
+                    background-color: grey;
+                }
+                </style>
+                <h2>Vertical Navigation Bar</h2>
+                <p>In this example, we center the navigation links and add a border to the navigation bar.</p>          
+    
+                <ul class="unlis">
+                  <li class="li"><a class="actvee" href="#home">Home</a></li>
+                  <li class="li"><a href="#news">News</a></li>
+                  <li class="li"><a href="#contact">Contact</a></li>
+                  <li class="li"><a href="#about">About</a></li>
+                </ul>
+        </center>
+    </div>
+    </div>
+
+    <div class="file">
+        <button id="buttonAct46">
+            <img src="assets/css3.png" alt="" class="htmlImage">
+            <h3>Horizontal Navbar</h3>
+        </button>
+    </div>
             
+        <div id="act46" style="display:none;">
+            <div class="t">
+                <center>
+                    <style>
+                        .ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            background-color: #333;
+                        }
+                        
+                        .l {
+                            float: left;
+                        }
+                        
+                        .l a {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                        }
+                        .l a:hover {
+                            background-color: #111;
+                        }
+                        </style>
+                        <ul class="ul">
+                            <li class="l"><a href="#home">Home</a></li>
+                            <li class="l"><a href="#news">News</a></li>
+                            <li class="l"><a href="#contact">Contact</a></li>
+                            <li class="l"><a href="#about">About</a></li>
+                        </ul>
+                </center> 
+            </div>
+        </div>
+        <div class="file">
+            <button id="buttonAct48">
+                <img src="assets/css3.png" alt="" class="htmlImage">
+                <h3>Border Dividers <br> in Navbar</h3>
+            </button>
+        </div>
+                
+        <div id="act48" style="display:none;">
+            <div class="t">
+                <center>
+                    <style>
+                        .unorder {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            background-color: #333;
+                        }
+                        .listt {
+                            float: left;
+                            border-right:1px solid #bbb;
+                        }
+                        .listt:last-child {
+                            border-right: none;
+                        }
+                        .listt a {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                        }
+                        .listt a:hover:not(.ac) {
+                            background-color: #111;
+                        }
+                        .ac {
+                            background-color: #4CAF50;
+                        }
+                        </style>
+                        <ul class="unorder">
+                            <li class="listt"><a class="ac" href="#home">Home</a></li>
+                            <li class="listt"><a href="#news">News</a></li>
+                            <li class="listt"><a href="#contact">Contact</a></li>
+                            <li class="listt" style="float:right"><a href="#about">About</a></li>
+                          </ul>
+                </center> 
+            </div>
+            </div>
+            <div class="file">
+                <button id="buttonAct49">
+                    <img src="assets/css3.png" alt="" class="htmlImage">
+                    <h3>Border Dividers</h3>
+                </button>
+            </div>
+                    
+            <div id="act49" style="display:none;">
+                <div class="mini_body">
+                    <center>
+                        <style>
+                            .mini_body {margin:0;}
+                            .walanamaisip{
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                                background-color: #333;
+                                position: fixed;
+                                top: 0;
+                                width: 100%;
+                            }
+                            .last2 {
+                                float: left;
+                            }
+                            .last2 a {
+                                display: block;
+                                color: white;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                            }
+                            .last2 a:hover:not(.ae) {
+                                background-color: #111;
+                            }
+                            .ae {
+                                background-color: #4CAF50;
+                            }
+                            </style>
+                            
+                            <ul class="walanamaisip">
+                                <li class="last2"><a class="ae" href="#home">Home</a></li>
+                                <li class="last2"><a href="#news">News</a></li>
+                                <li class="last2"><a href="#contact">Contact</a></li>
+                                <li class="last2"><a href="#about">About</a></li>
+                              </ul>
+                              <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
+                              <h1>Fixed Top Navigation Bar</h1>
+                              <h2>Scroll this page to see the effect</h2>
+                              <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+                              
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              <p>Some text some text some text some text..</p>
+                              </div>                              
+                    </center> 
+                </div>
+                </div>
+        <div class="file">
+            <button id="buttonAct47">
+                <img src="assets/css3.png" alt="" class="htmlImage">
+                <h3>Horizontal Navbar</h3>
+            </button>
+        </div>
+                
+        <div id="act47" style="display:none;">
+            <div class="t">
+                <center>
+                    <style>
+                        .us {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            overflow: hidden;
+                            background-color: #333;
+                        }
+                        .s {
+                            float: left;
+                        }
+                        .s a {
+                            display: block;
+                            color: white;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                        }
+                        .s a:hover:not(.at) {
+                            background-color: #111;
+                        }
+                        .at{
+                            background-color: grey;
+                        }
+                        </style>
+                        <ul class="us">
+                            <li class="s"><a class="at" href="#home">Home</a></li>
+                            <li class="s"><a href="#news">News</a></li>
+                            <li class="s"><a href="#contact">Contact</a></li>
+                            <li class="s"><a href="#about">About</a></li>
+                        </ul>
+                </center> 
+            </div>
+            </div>
+            <div class="file">
+                <button id="buttonAct50">
+                    <img src="assets/css3.png" alt="" class="htmlImage">
+                    <h3>Sticky Navbar</h3>
+                </button>
+            </div>
+                    
+            <div id="act50" style="display:none;">
+                <div class="lastbody">
+                    <center>
+                        <style>
+                            .lastbody {
+                                font-size: 18px;
+                            }
+                            .lastul {
+                                list-style-type: none;
+                                margin: 0;
+                                padding: 0;
+                                overflow: hidden;
+                                background-color: #333;
+                                position: -webkit-sticky; /* Safari */
+                                position: sticky;
+                                top: 0;
+                            }
+                            .lastli {
+                                float: left;
+                            }
+                            .lastli a {
+                                display: block;
+                                color: white;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                            }
+                            .lastli a:hover {
+                                background-color: #111;
+                            }
+                            
+                            .active {
+                                background-color: grey;
+                            }
+                            </style>
+                            
+                            <div class="header">
+                                <h2>Scroll Down</h2>
+                                <p>Scroll down to see the sticky effect.</p>
+                              </div>
+                              
+                              <ul class="lastul">
+                                <li class="lastli"><a class="active" href="#home">Home</a></li>
+                                <li class="lastli"><a href="#news">News</a></li>
+                                <li class="lastli"><a href="#contact">Contact</a></li>
+                              </ul>
+                              <h3>Sticky Navigation Bar Example</h3>
+                              <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+                              <p><strong>Note:</strong> Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. Safari requires a -webkit- prefix.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              <p>Some text to enable scrolling.</p>
+                              
+                    </center> 
+                </div>
+                </div>
+        
     </div><!--End of folder-->
 
         <!-- Input And Output box -->
